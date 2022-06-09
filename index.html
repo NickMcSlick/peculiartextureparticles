@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Peculiar Particles</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<script src="lib/three.min.js"></script>
+	<script src="lib/dat.gui.min.js"></script>
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix.js"></script>
+	<script src="js/peculiarParticles.js"></script>
+  </head>
+  <body onload="main()">
+	<div id="mainWrapper">
+		<span class="unselectable topSliderLabel" id="particleNumDisplay">Number of Particles: 50</span>
+		<input class="slider" id="particleNum" type="range" value="50" min="1" max="1500" />
+		<br><br>
+		<span class="unselectable">Motion: </span>
+		<br>
+		<input id="follow" type="radio" name="selection" value="0" checked />
+		<label for="follow" class="unselectable">Follow</label>
+		<br>
+		<input id="circle" type="radio" name="selection" value="1" />
+		<label for="circle" class="unselectable">Circle</label>
+		<br>
+		<input id="sloppyOrbit" type="radio" name="selection" value="2" />
+		<label for="sloppyOrbit" class="unselectable">Sloppy Orbit</label>
+		<br>
+		<input id="sharpOrbit" type="radio" name="selection" value="3" />
+		<label for="sharpOrbit" class="unselectable">Sharp Orbit</label>
+		<br>
+		<input id="galaxy" type="radio" name="selection" value="4" />
+		<label for="galaxy" class="unselectable">Galaxy</label>
+		<br>
+		<input id="spray" type="radio" name="selection" value="5" />
+		<label for="spray" class="unselectable">Spray</label>
+		<br>
+		<input id="fire" type="radio" name="selection" value="6" />
+		<label for="fire" class="unselectable">Fire</label>
+		<br>
+		<input id="bounce" type="radio" name="selection" value="7" />
+		<label for="bounce" class="unselectable">Bounce</label>
+	</div>
+	<canvas id="canvas"></canvas>
+  </body>
+</html>
